@@ -68,7 +68,7 @@ export function clickBoardHandler(e) {
                 addClassToElement(infoWinner, flushAnimation);
             }
 
-            if(objWithData.move === objWithData.numberNine){
+            if(objWithData.move === objWithData.numberNine && !final){
                 finishStepsProcessing();
                 setTextContextToElement(infoWinner,draw);
             }
