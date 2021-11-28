@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header class="page-header page-container">
+        <div class="title-wrapper">
+            <h1 class="page-title">
+                Tic Tac Toe
+            </h1>
+        </div>
+        
+        <nav class="page-nav>">
+            <ul class="nav-list none-list">
+                <li class="nav-item">
+                    <button type="button" class="nav-button" data-name="Start" disabled>
+                        Start
+                    </button>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="nav-button" data-name="Restart" disabled>
+                        Restart
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="page-container">
+        <section class="board is-hidden">
+            <div class="info">
+                <ul>
+                    <li class="info-wrapper">
+                        <h3 class="info-title">Turn</h3>
+                        <p class="turn-info">It's a turn for <span>Cross</span></p>
+                    </li>
+                    
+                    <li class="info-wrapper">
+                        <h3 class="info-title">Status</h3>
+                        <p class="status-info">Game in progress</p>
+                    </li>
+    
+                    <li class="info-wrapper is-hidden">
+                        <h3 class="info-title ">Winner</h3>
+                        <p class="winner-info animate__animated"></p>
+                    </li>
+                </ul>
+                
+            </div>
+            <div class="container-wrapper">
+                <div class="container">
+                    <div class="field animate__animated" data-index = "0" data-checked = "false" ></div>
+                    <div class="field animate__animated" data-index = "1" data-checked = "false" ></div>
+                    <div class="field animate__animated" data-index = "2" data-checked = "false" ></div>
+                    <div class="field animate__animated" data-index = "3" data-checked = "false" ></div>
+                    <div class="field animate__animated" data-index = "4" data-checked = "false" ></div>
+                    <div class="field animate__animated" data-index = "5" data-checked = "false" ></div>
+                    <div class="field animate__animated" data-index = "6" data-checked = "false" ></div>
+                    <div class="field animate__animated" data-index = "7" data-checked = "false" ></div>
+                    <div class="field animate__animated" data-index = "8" data-checked = "false" ></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" type="text/javascript" src="./index.js"></script>
+</body>
+</html>

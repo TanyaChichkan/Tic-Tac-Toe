@@ -1,0 +1,196 @@
+/* general utils classes */
+body {
+    box-sizing: border-box;
+    letter-spacing: 0.03em;
+    font-family: Roboto, sans-serif;
+}
+
+.page-container {
+    padding-left: 2%;
+    padding-right: 2%;
+    margin: 0 auto;
+}
+
+.none-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+  
+p, h1, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* page-header styles */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid black;
+    border-radius: 45px;
+}
+
+.page-nav {
+    width: 30%;
+}
+
+.title-wrapper {
+    width: 70%;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 50px;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.page-nav,
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-button {
+    width: 80px;
+    height: 35px;
+    border-radius: 10px;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 5px;
+}
+
+/* main section */
+
+/* classes edited by css */
+.info-wrapper.is-hidden,
+.board.is-hidden,
+.turn-info.is-hidden,
+.winner-info.is-hidden,
+.end-game-info.is-hidden,
+.info-title.is-hidden {
+    display: none;
+}
+
+/* section with the board and info */
+
+/* common style for all devices */
+.info {
+    border: 3px solid black;
+    border-radius: 5px;
+    background-color: antiquewhite;
+}
+
+@media (max-width: 767px) {
+    .board {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main.page-container  {
+        padding: 30px 0 0 0;
+    }
+
+    .info {
+        width: 300px;
+        height: 300px;
+        margin: 0 0 30px 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .board {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 30px;  
+    }
+    .info {
+        width: 45%
+    }
+}
+
+
+/* the game board */
+.container-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    margin: 0 auto;
+}
+
+/* game fields */
+.field {
+    width: 96px;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid black;
+    font-size: 100px;
+    background-color: lightyellow;
+}
+
+.field.change-color-cross {
+    background-color: yellow;
+}
+
+.field.change-color-naught {
+    background-color: lightcoral;
+}
+
+/* info-block */
+.info-wrapper:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.info > ul {
+    list-style-type: "\261E";
+    list-style-position: outside;
+}
+
+info-wrapper::marker {
+    font-size: 25px;
+    padding-right: 5px;
+}
+
+.info-wrapper p {
+    font-size: 20px;
+}
+
+.info-wrapper span {
+    font-size: 30px;
+    font-weight: bold;
+}   
+
+.info-wrapper .winner-info {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.info-title {
+    width: 73%;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 40px;
+    color: white;
+    background-color: darkblue;
+    border-radius: 10px;
+}
+
+
+
+
+
+ 
